@@ -1,0 +1,135 @@
+.addnote-wraper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(173, 196, 245, 0.6);
+  box-sizing: border-box;
+}
+
+.addnote-wraper .addnote-inner {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(20, 219, 10);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(194, 247, 79);
+
+}
+
+.addnote-wraper .addnote-inner .addnote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.addnote-inner .addnote input {
+  margin: 1.9rem 0 1.4rem;
+  width: 130%;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: rgb(171, 233, 37);
+  color: #222;
+  padding: 0.3rem 0;
+  font-family: "Handlee", cursive;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+
+
+}
+
+::placeholder {
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.addnote-inner .addnote .contents {
+  width: 100%;
+  font-size: 1.4rem;
+  flex: 1;
+  font-style: italic;
+  background-color: rgb(188, 238, 82);
+  resize: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.addnote-inner .addnote button {
+  margin: 1.5rem 0 0;
+  padding: 0.5rem 0;
+  width: 130%;
+  text-transform: uppercase;
+  background-color: rgb(156, 199, 63);
+
+}
+
+.addnote-inner .addnote button:hover {
+  letter-spacing: 1px;
+}
+
+.addnote-inner .close {
+  font-size: 1rem;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+  color: #777;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  background-color: rgb(158, 221, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addnote-inner .close:hover {
+  color: #222;
+  transform: scale(1.2);
+  box-shadow: none;
+
+}
+
+.addnote-inner .maxchar {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ddd;
+  left: 6px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 300;
+  color: #999;
+}
+
+.addnote-inner .maxchartext {
+  position: absolute;
+  left: 3rem;
+  bottom: 37px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-left: 1.3rem;
+  color: #777;
+  font-style: italic;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  /* background: linear-gradient(to right, #c9d4f2, #fff, #c9d4f2); */
+  background-color: #333;
+}
+
+html {
+  font-family: "Handlee", cursive;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  box-shadow: 4px 4px 8px #999;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  .app {
+    padding: 0 1rem;
+  }
+}
